@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cálculo de Notas</title>
+</head>
+<body>
+    
+    <section id="container">
+        <div id="logo">
+            <img src="img/logo.png" alt="Imagem">
+        </div>
+        <div id="form">
+            <h1>Sistema de cálculo de notas</h1>
+
+            <form action="" class="Formulario">
+                <label for="Aluno" id="nome_aluno">Aluno</label>
+                <input id="aluno" type="text" required>
+                <label for="nota1" id="nota1_aluno">Nota 1</label>
+                <input id="nota1" type="number" required>
+                <label for="nota2" id="nota2_aluno">Nota 2</label>
+                <input id="nota2" type="number" required>
+                <button type="button" onclick="calcular()">Inserir</button>
+            </form>
+        </div>
+        <div class="lista_alunos">
+            <table id="table_alunos">
+                <tbody id="table_alunos2">
+                    <tr id="linhaprincipal">
+                        <td>Aluno</td>
+                        <td>Nota1</td>
+                        <td>Nota2</td>
+                        <td>Média</td>
+                        <td>Situação</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="js/estudo.js"></script>
+</body>
+</html>
