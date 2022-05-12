@@ -20,9 +20,15 @@ function calcular(){
     var situacao
 
 // Validação de campos em branco
-if(aluno=="" && nota1<=0 && nota2<=0){
+if(aluno=='' || isNaN(nota1) || isNaN(nota2)){
     alert("Campos não podem ficar em branco")
-}else{
+}else if(nota1>10 || nota2>10){
+        nota1.value.innerHTML = ''
+        nota1.value.innerHTML=''
+        // alert("As notas não podem ser maior que 10")
+        // location = location
+       
+    }else{
 // verificação de Aprovado e Reprovado
 if(media >= 6.75){
     situacao = "Aprovado"
@@ -42,6 +48,7 @@ const nomes = function(){
         '<td>'+lista[i].media+'</td>'+
         '<td>'+lista[i].situacao+'</td>'+
     '</tr>'
+    
     }
     // Aqui jogamos a linha dentro da tabela
     tablePrincipal.innerHTML += tableHtml

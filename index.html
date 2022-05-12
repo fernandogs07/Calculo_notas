@@ -11,7 +11,7 @@
     
     <section id="container">
         <div id="logo">
-<!--             <img src="img/logo.png" alt="Imagem"> -->
+            <img src="img/logo.png" alt="Imagem">
         </div>
         <div id="form">
             <h1>Sistema de cálculo de notas</h1>
@@ -20,9 +20,9 @@
                 <label for="Aluno" id="nome_aluno">Aluno</label>
                 <input id="aluno" type="text" required>
                 <label for="nota1" id="nota1_aluno">Nota 1</label>
-                <input id="nota1" type="number" required>
+                <input id="nota1" type="number" max="10" required>
                 <label for="nota2" id="nota2_aluno">Nota 2</label>
-                <input id="nota2" type="number" required>
+                <input id="nota2" type="number" max="10" required>
                 <button type="button" onclick="calcular()">Inserir</button>
             </form>
         </div>
